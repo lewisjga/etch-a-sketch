@@ -1,0 +1,21 @@
+#grid-frame {
+    width: 960px;
+    height: 960px;
+    border: 2px dashed violet;
+    display: flex;
+    flex-flow: column;
+}
+
+.etch-row {
+    display: flex;
+    flex-flow: row wrap;
+    flex: auto
+}
+
+.etch-pixel {
+    background-color: aqua;
+    border: 1px solid black;
+    display: flex;
+    flex: auto;
+    flex-flow: row;
+}
