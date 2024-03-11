@@ -1,11 +1,14 @@
 const gridFrame = document.createElement('div');
 gridFrame.id = 'grid-frame';
-let userInput = document.getElementById('user-input');
 let submitButton = document.getElementById('submit-button');
 
 let gridDimensions = 16;
 
-
+submitButton.addEventListener('click', () => {
+    let userInput = document.getElementById('user-input').value;
+    gridDimensions = userInput;
+    drawGrid(gridDimensions);
+})
 
 
 function drawGrid(dimensions){
@@ -34,5 +37,3 @@ function drawGrid(dimensions){
     }
     document.body.appendChild(gridFrame);
 }
-
-drawGrid(gridDimensions);

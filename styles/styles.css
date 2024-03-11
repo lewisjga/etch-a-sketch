@@ -17,6 +17,12 @@
     flex: auto;
 }
 
-.content {
+#content {
     margin: 25px 0 25px;
+}
+
+body {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
 }
