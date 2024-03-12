@@ -29,7 +29,12 @@ function drawGrid(dimensions){
             });
             gridPix.addEventListener('mouseleave',
             () => {
+                let redVal = Math.floor(Math.random() * 255) + 1;
+                let blueVal = Math.floor(Math.random() * 255) + 1;
+                let greenVal = Math.floor(Math.random() * 255) + 1;
+                let alphaVal = Math.random().toFixed(2);
                 gridPix.style.backgroundColor = 'black';
+                gridPix.style.backgroundColor = `rgb(${redVal}, ${blueVal}, ${greenVal}, ${alphaVal})`;
             });
             gridRow.append(gridPix);
         }
